@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подсветка SQL</title>
+
+    <!-- Подключаем тему 'sunburst' -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/androidstudio.min.css">
+
+    <!-- Подключаем сам Highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Инициализируем подсветку для всех блоков
+            hljs.highlightAll();
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Используем pre и code с классом language-sql -->
+    <pre><code class="language-sql">
+SELECT item, amount, amount + 100 AS total_amount
+FROM Orders;
+    </code></pre>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Инициализируем подсветку для всех блоков
+            hljs.highlightAll();
+        });
+    </script>
+    
+</body>
+</html>

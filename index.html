@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sql-style.css">
+
+      <!-- Подключаем тему 'sunburst' -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/atelier-forest-light.min.css">
+      <!-- Подключаем сам Highlight.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li onclick="showContent('testingTypes')">Теория тестирования</li>
+                <li onclick="showContent('testDocumentation')">Тестовая документация</li>
+                <li onclick="showContent('roles')">Роли на проекте</li>
+                <li onclick="showContent('sdlc')">SDLC / STLS / Models</li>
+                <li onclick="showContent('mobile')">Mobile IOS / Android</li>
+                <li onclick="showContent('authorization')">Авторизация</li>
+                <li onclick="showContent('SQL')">SQL</li>
+                <li onclick="showContent('API')">API + WEB</li>
+                <li onclick="showContent('architecture')">Клиент серверная архитектура</li>
+                <li onclick="showContent('ci_cd_doker')">CI / CD  and Doker</li>
+                <li onclick="showContent('testProizvoditelnosti')">Тестирование производительности</li>
+                <li onclick="showContent('vcs')">Mercurial / Git</li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <!-- Здесь будет отображаться информация из второй колонки -->
+        </div>
+        <div class="article" id="article">
+            <!-- Здесь будут отображаться статьи -->
+
+            <!-- "это для формата" 
+            <body onload="showArticle('emulators')">
+                -->
+                <body onload="initPage()">
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

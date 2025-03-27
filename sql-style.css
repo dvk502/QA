@@ -1,0 +1,7 @@
+/* Задаем шрифт для всех элементов <code> */
+code {
+    font-size: 16px !important;  /* Можно настроить размер шрифта */
+    padding: 10px !important;
+    border-radius: 3px; /* Добавление радиуса рамки */
+}
+

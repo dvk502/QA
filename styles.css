@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/*                 ЛЕВЫЙ  СТОЛБЕЦ                        */
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #444;
+}
+
+
+/*                 СРЕДНИЙ СТОЛБЕЦ                        */
+
+.content {
+    width: 350px;
+    padding: 15px;
+}
+
+.content li:hover,
+.content p:hover, 
+.content h2:hover, 
+.content h3:hover,
+.content h4:hover { 
+    background-color: #dadadad0; 
+        transition: background-color 0.1s ease, transform 0.3s ease, padding 0.1s ease, margin-left 0.1s ease; /* Плавный переход фона, масштаба, паддинга и отступа */
+        color: #333; /* Изменение цвета текста при наведении */
+        cursor: pointer; /* Изменение курсора на стрелку при наведении */
+        transform: scale(1.1); /* Увеличение масштаба текста при наведении */
+        border-radius: 10px; /* Добавление радиуса рамки */
+        margin-left: 10px; /* Смещение текста вправо при наведении */
+        font-weight: bold; /* Добавление жирности текста при наведении */
+    }
+
+.content div > div:hover { /* <-- Изменил селектор */
+        background-color: #dadadad0; 
+            transition: background-color 0.1s ease, transform 0.3s ease, padding 0.1s ease, margin-left 0.1s ease; /* Плавный переход фона, масштаба, паддинга и отступа */
+            color: #333; /* Изменение цвета текста при наведении */
+            cursor: pointer; /* Изменение курсора на стрелку при наведении */
+            transform: scale(1.5); /* Увеличение масштаба текста при наведении */
+            border-radius: 4px; /* Добавление радиуса рамки */
+            font-weight: bold; /* Добавление жирности текста при наведении */
+        }
+
+        
+.content h4,
+.content h3 {
+    margin-top: 10px; /* уменьшить отступ сверху */
+    margin-bottom: 0px; 
+}
+
+.content ul {
+    margin-top: 0px; /* уменьшить отступ сверху */
+    margin-bottom: 0px; 
+}
+
+/*                 ПРАВЫЙ СТОЛБЕЦ                        */
+
+    
+.article {
+    flex: 1;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ddd;
+}
+
+.article h3 {
+    margin-top: 15px; /* отступ сверху */
+    margin-bottom: 5px; 
+}
+
+.article h4  {
+    margin-top: 20px; /* отступ сверху */
+    margin-bottom: 5px; 
+}
+
+
+.article ul  {
+    margin-top: 0px; /* уменьшить отступ сверху */
+    margin-bottom: 10px; 
+}
+
+.article p  {
+    margin-top: 5px; /* уменьшить отступ сверху */
+    margin-bottom: 3px; 
+}
+
+.article td {
+    padding-top: 10px; /* Отступ внутри ячейки сверху */
+}
+
+/*                 КОМПАКТ                       */
+
+
+.padding {
+    margin-bottom: 20px !important; 
+}
+
+.compact {
+    margin-top: -15px !important; /* уменьшить отступ сверху */
+    margin-bottom: -15px !important; 
+}
+
+.compact2 {
+    margin-top: -5px !important; /* уменьшить отступ сверху */
+    margin-bottom: -5px !important; 
+}
