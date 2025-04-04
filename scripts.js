@@ -1,6 +1,6 @@
 // Функция загрузки HTML-файла из подпапки
 async function loadArticle(category, articleName) {
-  let response = await fetch(`/articles/${category}/${articleName}.html`);
+  let response = await fetch(`articles/${category}/${articleName}.html`);
   if (!response.ok) {
       console.error(`Ошибка загрузки ${category}/${articleName}: ${response.statusText}`);
       return "Статья не найдена";
@@ -21,7 +21,7 @@ async function showArticle(category, article) {
 
 // Функция показа контента в средней панели
 async function showContent(sectionName) {
-  let response = await fetch(`/content/${sectionName}.html`); // Загружаем HTML-файл
+  let response = await fetch(`content/${sectionName}.html`); // Загружаем HTML-файл
   if (!response.ok) {
       console.error(`Ошибка загрузки ${sectionName}: ${response.statusText}`);
       return "Контент не найден";
