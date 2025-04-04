@@ -1,0 +1,57 @@
+<h3>Запросы и Ответы</h3>
+<ul>
+  <li>
+    <p><span><strong>HTTP-запросы</strong>: Это сообщения, которые отправляются клиентом серверу для получения информации или выполнения действий. Запросы включают метод (например, GET, POST), URL, заголовки и тело (в зависимости от метода).</span></p>
+  </li>
+  <li>
+    <p><span><strong>HTTP-ответы</strong>: Это ответы сервера на запросы клиента. Ответы включают статусный код (например, 200 OK, 404 Not Found), заголовки и тело (если есть).</span></p>
+  </li>
+</ul>
+
+<h3><strong>HTTP / HTTPS (HyperText Transfer Protocol / Secure)</strong></h3>
+<ul>
+  <li>
+    <p><strong>Применение:</strong> передача данных между клиентом и сервером (веб-приложения, REST API).</p>
+  </li>
+  <li>
+    <p><strong>Методы:</strong></p>
+    <ul>
+      <li><p><code>GET</code> &ndash; получить данные</p></li>
+      <li><p><code>POST</code> &ndash; отправить данные</p></li>
+      <li><p><code>PUT</code> &ndash; обновить ресурс</p></li>
+      <li><p><code>DELETE</code> &ndash; удалить ресурс</p></li>
+      <li><p><code>PATCH</code> &ndash; частичное обновление</p></li>
+      <li><p><code>HEAD</code>, <code>OPTIONS</code>, <code>TRACE</code></p></li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Коды ответа:</strong> <code>2xx</code> (успех), <code>3xx</code> (редирект), <code>4xx</code> (ошибки клиента), <code>5xx</code> (ошибки сервера).</p>
+  </li>
+  <li>
+    <p><strong>HTTPS</strong> &ndash; защищённая версия HTTP, использующая <strong>TLS/SSL</strong> для шифрования данных. Она предотвращает:</p>
+    <ul>
+      <li><strong>MITM-атаки (Man-in-the-Middle):</strong> защищает данные от перехвата злоумышленниками во время их передачи.</li>
+      <li><strong>Фальсификацию данных:</strong> предотвращает изменения данных в процессе передачи.</li>
+      <li><strong>Неавторизованный доступ:</strong> данные шифруются, что делает их бесполезными для третьих лиц без ключа дешифровки.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>✅ <strong>Что тестировать?</strong></p>
+<ul>
+  <li>
+    <p>Правильность HTTP-методов</p>
+  </li>
+  <li>
+    <p>Корректность заголовков (Content-Type, CORS, Authorization)</p>
+  </li>
+  <li>
+    <p>Безопасность:</p>
+    <ul>
+      <li>Использование HTTPS</li>
+      <li>Защита от MITM-атак</li>
+      <li>Куки с атрибутами <code>HttpOnly</code> и <code>Secure</code></li>
+      <li>Корректные редиректы</li>
+    </ul>
+  </li>
+</ul>

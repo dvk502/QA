@@ -1,0 +1,63 @@
+<h3>В чем разница между выражениями WHERE и HAVING</h3>
+<table cellspacing="0" cellpadding="0" dir="ltr" border="1" data-sheets-root="1" data-sheets-baot="1">
+    <colgroup>
+        <col width="100" />
+        <col width="100" />
+        <col width="100" />
+        <col width="132" />
+        <col width="108" />
+        <col width="113" />
+        <col width="100" />
+        <col width="100" />
+        <col width="100" />
+        <col width="100" />
+    </colgroup>
+    <tbody>
+        <tr>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td rowspan="2" colspan="2" style="text-align: center;">
+                <div>Параметры</div>
+            </td>
+            <td rowspan="2" colspan="4" style="text-align: center;">
+                <div>WHERE</div>
+            </td>
+            <td rowspan="2" colspan="4" style="text-align: center;">
+                <div>HAVING</div>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td rowspan="1" colspan="2">Реализовано в</td>
+            <td rowspan="1" colspan="4">Строковых операциях</td>
+            <td rowspan="1" colspan="4">Столбцовах операциях</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="2">Относится к</td>
+            <td rowspan="1" colspan="4">Отдельной строке</td>
+            <td rowspan="1" colspan="4">Суммированной строке или группам</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="2">Используется для</td>
+            <td rowspan="1" colspan="4">Выборке конкретных данных из определенных строк, согласно заданным условиям</td>
+            <td rowspan="1" colspan="4">Выборке всех данных и отделения тех из них, которые соответсвуют заданным условиям</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="2">Агрегатные функции</td>
+            <td rowspan="1" colspan="4">Не может содержать</td>
+            <td rowspan="1" colspan="4">Может содержать</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="2">Операторы</td>
+            <td rowspan="1" colspan="4">Может использоваться с SELECT, DELETE и UPDATE</td>
+            <td rowspan="1" colspan="4">Не может содержаться без оператора SELECT</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="2">Выражение GROUP BY</td>
+            <td rowspan="1" colspan="4">Идет после выражения WHERE</td>
+            <td rowspan="1" colspan="4">Идет перед выражением HAVING</td>
+        </tr>
+    </tbody>
+</table>
+<p></p>

@@ -1,0 +1,40 @@
+<h3><strong>Архитектура Android: Краткий обзор</strong></h3>
+<p>Android построен на <strong>ядре Linux</strong> и включает несколько ключевых уровней.</p>
+<h4><strong>1. Linux Kernel</strong></h4>
+<ul>
+    <li>Драйверы оборудования (Bluetooth, камера и т. д.).</li>
+    <li>Управление памятью и процессами.</li>
+    <li>Энергосбережение (Power Management).</li>
+</ul>
+<h4><strong>2. Hardware Abstraction Layer (HAL)</strong></h4>
+<p>Обеспечивает связь между драйверами и системой, переводя запросы приложений в понятный для оборудования формат.</p>
+<h4><strong>3. Android Runtime (ART)</strong></h4>
+<p>Виртуальная машина для выполнения Java-приложений:</p>
+<ul>
+    <li><strong>DEX-формат</strong> для оптимизации кода.</li>
+    <li><strong>JIT-компиляция</strong> (Just-in-Time) &mdash; ускоряет выполнение кода.</li>
+    <li><strong>AOT-компиляция</strong> (Ahead-of-Time) &mdash; предварительная компиляция для повышения производительности.</li>
+</ul>
+<h4><strong>4. Native C/C++ Libraries</strong></h4>
+<p>Системные библиотеки:</p>
+<ul>
+    <li><strong>WebKit</strong> &mdash; движок браузера.</li>
+    <li><strong>SQLite</strong> &mdash; встроенная база данных.</li>
+    <li><strong>OpenGL</strong> &mdash; графический рендеринг.</li>
+    <li><strong>Media Framework</strong> &mdash; обработка аудио и видео.</li>
+</ul>
+<h4><strong>5. Java API Framework</strong></h4>
+<p>API-интерфейсы для работы с системными компонентами:</p>
+<ul>
+    <li><strong>Activity Manager</strong> &mdash; управление жизненным циклом приложений.</li>
+    <li><strong>Window Manager</strong> &mdash; управление окнами и UI.</li>
+    <li><strong>Notification Manager</strong> &mdash; работа с уведомлениями.</li>
+    <li><strong>Location Manager</strong> &mdash; определение местоположения.</li>
+</ul>
+<h4><strong>6. System Apps</strong></h4>
+<p>Встроенные приложения:</p>
+<ul>
+    <li>Браузер, сообщения, контакты.</li>
+    <li>Google Play и сервисы Google.</li>
+</ul>
+<p>Эта архитектура делает Android гибкой, мощной и удобной для разработчиков.</p>

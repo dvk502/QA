@@ -1,0 +1,52 @@
+<table style="width: 286px; border-style: solid;" border="1">
+    <tbody>
+    <tr>
+    <td style="width: 95.825px; text-align: center;"><strong><span class="raznui_kolir_td">Оператор</span></strong></td>
+    <td style="width: 176.575px; text-align: center;"><strong><span class="raznui_kolir_td">Описание</span></strong></td>
+    </tr>
+    <tr>
+    <td style="width: 95.825px; text-align: center;">=</td>
+    <td style="width: 176.575px; text-align: center;">Равно</td>
+    </tr>
+    <tr>
+    <td style="width: 95.825px; text-align: center;">&lt;</td>
+    <td style="width: 176.575px; text-align: center;">Меньше чем</td>
+    </tr>
+    <tr>
+    <td style="width: 95.825px; text-align: center;">&gt;</td>
+    <td style="width: 176.575px; text-align: center;">Больше чем</td>
+    </tr>
+    <tr>
+    <td style="width: 95.825px; text-align: center;">&lt;=</td>
+    <td style="width: 176.575px; text-align: center;">Меньше или равно</td>
+    </tr>
+    <tr>
+    <td style="width: 95.825px; text-align: center;">&gt;=</td>
+    <td style="width: 176.575px; text-align: center;">Больше или равно</td>
+    </tr>
+    <tr>
+    <td style="width: 95.825px; text-align: center;">&lt;&gt;, !=</td>
+    <td style="width: 176.575px; text-align: center;">Не равно</td>
+    </tr>
+    </tbody>
+    </table>
+    <pre><code class="language-sql">SELECT order_id, item, amount
+    FROM Orders
+    WHERE customer_id = 4;</code></pre>
+    <pre><code class="language-sql">SELECT item, amount, amount-20 AS offer_price
+    FROM Orders;</code></pre>
+    <pre><code class="language-sql">SELECT order_id, item, amount
+    FROM Orders
+    WHERE amount < 400;</code></pre>
+    <pre><code class="language-sql">SELECT order_id, item, amount
+    FROM Orders
+    WHERE amount > 400;</code></pre>
+    <pre><code class="language-sql">SELECT order_id, item, amount
+    FROM Orders
+    WHERE amount <= 400;</code></pre>
+    <pre><code class="language-sql">SELECT order_id, item, amount
+    FROM Orders
+    WHERE amount >= 400;</code></pre>
+    <pre><code class="language-sql">SELECT order_id, item, amount
+    FROM Orders
+    WHERE amount != 400;</code></pre>

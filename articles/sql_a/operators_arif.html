@@ -1,0 +1,37 @@
+<table style="border-style: solid;">
+    <tbody>
+    <tr>
+    <td style="text-align: center;"><strong><span>Оператор</span></strong></td>
+    <td style="text-align: center;"><strong><span>Описание</span></strong></td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">+</td>
+    <td style="text-align: center;">Сложение</td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">&minus;</td>
+    <td style="text-align: center;">Вычитание</td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">*</td>
+    <td style="text-align: center;">Умножение</td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">/</td>
+    <td style="text-align: center;">Деление</td>
+    </tr>
+    <tr>
+    <td style="text-align: center;">%</td>
+    <td style="text-align: center;">Остаток от деления</td>
+    </tr>
+    </tbody>
+    </table>
+    <pre><code class="language-sql">SELECT item, amount, amount+100 AS total_amount
+    FROM Orders;</code></pre>
+    <pre><code class="language-sql">SELECT item, amount, amount-20 AS offer_price
+    FROM Orders;</code></pre>
+    <pre><code class="language-sql">SELECT item, amount, amount*4 AS total_amount
+    FROM Orders;</code></pre>
+    <pre><code class="language-sql">SELECT item, amount, amount/2 AS half_amount
+    FROM Orders;</code></pre>
+    <pre><code class="language-sql">SELECT 10 % 3 AS result;</code></pre>

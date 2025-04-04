@@ -1,0 +1,51 @@
+<p>Выражение (expression) — это комбинация значений, операторов и функций для оценки (вычисления) значения. Выражения похожи на формулы, написанные на языке запросов. Они могут использоваться для извлечения из БД определенного набора данных.</p>
+<p>Базовый синтаксис выражения выглядит так:</p>
+
+<pre><code class="language-sql">SELECT col1, col2, ...colN
+FROM tableName
+WHERE [condition|expression];</code></pre>
+<h3>Логические</h3>
+<p>Логические выражения извлекают данные на основе совпадения с единичным значением.
+
+<pre><code class="language-sql">SELECT col1, col2, ...colN
+FROM tableName
+WHERE выражение для поиска совпадения с единичным значением;</code></pre>
+
+<h3>Числовые</h3>
+
+<pre><code class="language-sql">SELECT numericalExpression as operationName
+[FROM tableName
+WHERE condition];
+
+SELECT (10 + 5) AS addition;</code></pre>
+
+<p>Существует несколько встроенных функций, таких как count(), sum(), avg(), min(), max() и др. для выполнения так называемых агрегирующих вычислений данных таблицы или колонки.</p>
+<pre><code class="language-sql">SELECT COUNT(*) AS records FROM users;</code></pre>
+
+<ul>
+    <li><code>AVG</code><span>&nbsp;</span>&mdash; вычисляет среднее значение</li>
+    <li><code>SUM</code><span>&nbsp;</span>&mdash; вычисляет сумму значений</li>
+    <li><code>MIN</code><span>&nbsp;</span>&mdash; вычисляет наименьшее значение</li>
+    <li><code>MAX</code><span>&nbsp;</span>&mdash; вычисляет наибольшее значение</li>
+    <li><code>COUNT</code><span>&nbsp;</span>&mdash; вычисляет количество записей в таблице</li>
+</ul>
+<p>Также существует несколько встроенных функций для работы со строками:</p>
+<ul>
+    <li><code>CONCAT</code><span>&nbsp;</span>&mdash; объединение строк</li>
+    <li><code>LENGTH</code><span>&nbsp;</span>&mdash; возвращает количество символов в строке</li>
+    <li><code>TRIM</code><span>&nbsp;</span>&mdash; удаляет пробелы в начале и конце строки</li>
+    <li><code>SUBSTRING</code><span>&nbsp;</span>&mdash; извлекает подстроку из строки</li>
+    <li><code>REPLACE</code><span>&nbsp;</span>&mdash; заменяет подстроку в строке</li>
+    <li><code>LOWER</code><span>&nbsp;</span>&mdash; переводит символы строки в нижний регистр</li>
+    <li><code>UPPER</code><span>&nbsp;</span>&mdash; переводит символы строки в верхний регистр и т.д.</li>
+</ul>
+<p>с числами:</p>
+<ul>
+    <li><code>ROUND</code><span>&nbsp;</span>&mdash; округляет число</li>
+    <li><code>TRUNCATE</code><span>&nbsp;</span>&mdash; обрезает дробное число до указанного количества знаков после запятой</li>
+    <li><code>CEILING</code><span>&nbsp;</span>&mdash; возвращает наименьшее целое число, которое больше или равно текущему значению</li>
+    <li><code>FLOOR</code><span>&nbsp;</span>&mdash; возвращает наибольшее целое число, которое меньше или равно текущему значению</li>
+    <li><code>POWER</code><span>&nbsp;</span>&mdash; возводит число в указанную степень</li>
+    <li><code>SQRT</code><span>&nbsp;</span>&mdash; возвращает квадратный корень числа</li>
+    <li><code>RAND</code><span>&nbsp;</span>&mdash; генерирует случайное число с плавающей точкой в диапазоне от 0 до 1</li>
+</ul>
